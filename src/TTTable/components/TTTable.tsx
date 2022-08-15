@@ -99,7 +99,8 @@ function TTTable<Tdata>({
     debugColumns: true,
   });
 
-  //   we update the table context so that we can pass it to the child components
+  // we update the table context so that the sub-components
+  // can access the table props and state without prop-drilling
 
   const tableProps = {
     inputColumns,

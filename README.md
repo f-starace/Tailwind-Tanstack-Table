@@ -2,6 +2,8 @@
 
 A responsive, easily customizable Table based on Tanstack Table (Ract Table v8), Tailwind CSS and Typescript.
 
+> Note: This repo is a work in progress.
+
 ## Todo:
 
 - [x] Composable Table sub-components

@@ -1,8 +1,8 @@
-# TTTable
+# TTTable
 
 A responsive, easily customizable Table based on Tanstack Table (Ract Table v8), Tailwind CSS and Typescript.
 
-## TODO:
+## Todo:
 
 - [x] Composable Table sub-components
 - [x] Added context to avoid prop-drilling of table sub-components

@@ -20,39 +20,39 @@ const TablePagination: React.FC = () => {
   }
 
   return (
-    <div className="flex items-center gap-2 flex-wrap">
-      <span className="relative z-0 inline-flex rounded-md grow">
+    <div className="flex flex-wrap items-center gap-2">
+      <span className="relative z-0 inline-flex grow rounded-md">
         <button
           type="button"
-          className="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+          className="relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
           onClick={() => table.setPageIndex(0)}
           disabled={!table.getCanPreviousPage()}
         >
-          <ChevronDoubleLeftIcon className="w-4 h-4" />
+          <ChevronDoubleLeftIcon className="h-4 w-4" />
         </button>
         <button
           type="button"
-          className="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+          className="relative -ml-px inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
           onClick={() => table.previousPage()}
           disabled={!table.getCanPreviousPage()}
         >
-          <ChevronLeftIcon className="w-4 h-4" />
+          <ChevronLeftIcon className="h-4 w-4" />
         </button>
         <button
           type="button"
-          className="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+          className="relative -ml-px inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
           onClick={() => table.nextPage()}
           disabled={!table.getCanNextPage()}
         >
-          <ChevronRightIcon className="w-4 h-4" />
+          <ChevronRightIcon className="h-4 w-4" />
         </button>
         <button
           type="button"
-          className="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+          className="relative -ml-px inline-flex items-center rounded-r-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
           onClick={() => table.setPageIndex(table.getPageCount() - 1)}
           disabled={!table.getCanNextPage()}
         >
-          <ChevronDoubleRightIcon className="w-4 h-4" />
+          <ChevronDoubleRightIcon className="h-4 w-4" />
         </button>
       </span>
       <span className="flex items-center gap-1">
@@ -70,7 +70,7 @@ const TablePagination: React.FC = () => {
             const page = e.target.value ? Number(e.target.value) - 1 : 0;
             table.setPageIndex(page);
           }}
-          className="border p-1 rounded w-16"
+          className="w-16 rounded border p-1"
         />
       </span>
       <select

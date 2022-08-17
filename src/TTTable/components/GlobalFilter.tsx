@@ -12,7 +12,7 @@ const GlobalFilter: React.FC = () => {
         value={globalFilter ?? ""}
         type="text"
         onChange={(value) => setGlobalFilter(value as string)}
-        className="p-2 font-lg shadow border border-block"
+        className="font-lg border-block border p-2 shadow"
         placeholder="Search all columns..."
       />
     </div>

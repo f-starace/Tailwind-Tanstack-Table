@@ -10,9 +10,9 @@ const TableWrapper: React.FC<PropsWithChildren> = ({ children, ...props }) => {
     <div
       className={joinStrings(
         "table-wrapper",
-        "max-w-full overflow-x-auto my-5",
+        "my-5 max-w-full overflow-x-auto",
         bordered &&
-          "-mx-4 mt-10 ring-1 ring-gray-300 sm:-mx-6 md:mx-0 md:rounded-lg relative"
+          "relative -mx-4 mt-10 ring-1 ring-gray-300 sm:-mx-6 md:mx-0 md:rounded-lg"
       )}
     >
       {children}
